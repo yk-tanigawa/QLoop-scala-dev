@@ -8,7 +8,7 @@ import java.io.{BufferedReader, FileReader}
 
 object QLoop {
   val progName = "QLoop"
-  val version = "1.0"
+  val version = "0.01"
 
   def showInfo(): Unit ={
     println(progName)
@@ -26,10 +26,6 @@ object QLoop {
     val f = new Feature(fasta.toStr, 5)
 
     println(f.f)
-
-    val g = new Feature("AAAAA", 5)
-
-    println(g.f)
   }
 
 }

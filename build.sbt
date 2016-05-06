@@ -1,6 +1,6 @@
 name := "QLoop-scala"
 
-version := "1.0"
+version := "0.01"
 
 scalaVersion := "2.11.8"
 

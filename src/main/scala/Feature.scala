@@ -12,7 +12,7 @@ class Feature (seq: String, k: Int) {
     }else{
       val kmer_mask = (1 << (2 * k)) - 1
 
-      var c = new Array[Int](1 << (2 * k))
+      val c = new Array[Int](1 << (2 * k))
       var kmer = 0
 
       for(i <- 0 until (k - 1)){
