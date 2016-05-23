@@ -2,6 +2,9 @@ import java.io.{BufferedReader, FileReader}
 
 /**
   * Created by yosuke on 5/6/16.
+  *
+  * This class reads a fasta file
+  *
   */
 class Fasta(file : String){
 
@@ -12,6 +15,8 @@ class Fasta(file : String){
   def head: String = header
 
   def len: Int = toStr.length
+
+  def n_bins(res : Int): Int = len / res
 
   private def open[U](fileName:String)(body:Iterator[String] => U) {
     val in = new BufferedReader(new FileReader(fileName))

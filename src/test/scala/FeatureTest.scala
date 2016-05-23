@@ -55,4 +55,24 @@ class FeatureTest extends FunSuite {
 
   }
 
+  test("dump a feature vector") {
+
+    val k = 1
+
+    val seq1 = "NNNNN"
+    val f1 = new Feature(seq1, k)
+    println(seq1)
+    println(f1)
+    println(f1.f)
+    println(f1.dump())
+
+
+    val seq2 = "AAAAA"
+    val f2 = new Feature(seq2, k)
+    println(seq2)
+    println(f2)
+    println(f2.f)
+    println(f2.dump())
+  }
+
 }

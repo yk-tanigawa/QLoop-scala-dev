@@ -1,9 +1,16 @@
+import sbt.Keys._
+
 name := "QLoop-scala"
 
 version := "0.01"
 
-scalaVersion := "2.11.8"
+scalaVersion := "2.10.6"
 
-libraryDependencies += "org.scalatest" % "scalatest_2.11" % "2.2.4" % "test"
+scalacOptions ++= Seq("-encoding", "UTF-8")
 
-libraryDependencies += "org.apache.spark" %% "spark-core" % "1.6.1"
+libraryDependencies ++= Seq(
+  "org.scalactic" %% "scalactic" % "2.2.6",
+  "org.scalatest" %% "scalatest" % "2.2.6" % "test",
+  "org.apache.spark" %% "spark-core" % "1.6.1",
+  "org.apache.spark" %% "spark-mllib" % "1.6.1"
+)
